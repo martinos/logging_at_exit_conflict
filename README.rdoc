@@ -1,0 +1,3 @@
+= Logging at_exit Conflict
+This little app shows the conflict between TestUnit and the Logging gems at_gem. The app is based on Paul Boone works: http://www.mindbucket.com/2008/05/02/using-logging-and-testunit-together/.
+
