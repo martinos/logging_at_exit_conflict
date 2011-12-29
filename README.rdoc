@@ -5,7 +5,7 @@ This little app shows the conflict between TestUnit and the Logging gems. The ap
   git clone git@github.com:martinos/logging_at_exit_conflict.git
   cd logging_at_exit_conflict
   bundle
-If you run the test by typing
+If you start the test by running
   ruby test/at_exit_conflict_test.rb
 You will have no errors.
 But if you use Guard
