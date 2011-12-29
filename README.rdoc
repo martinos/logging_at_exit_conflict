@@ -1,3 +1,14 @@
 = Logging at_exit Conflict
-This little app shows the conflict between TestUnit and the Logging gems at_gem. The app is based on Paul Boone works: http://www.mindbucket.com/2008/05/02/using-logging-and-testunit-together/.
+This little app shows the conflict between TestUnit and the Logging gems at_gem. The app is based on Paul Boone work: http://www.mindbucket.com/2008/05/02/using-logging-and-testunit-together/.
 
+== Usage
+  git clone git@github.com:martinos/logging_at_exit_conflict.git
+  cd logging_at_exit_conflict
+  bundle
+If you run the test by typing
+  ruby test/at_exit_conflict_test.rb
+You will have no errors.
+But if you use Guard
+  bundle exec guard
+You will get
+  RuntimeError: appender '<Logging::Appenders::Stdout: stdout>' is closed
