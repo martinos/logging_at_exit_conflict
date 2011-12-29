@@ -1,5 +1,5 @@
 = Logging at_exit Conflict
-This little app shows the conflict between TestUnit and the Logging gems at_gem. The app is based on Paul Boone work: http://www.mindbucket.com/2008/05/02/using-logging-and-testunit-together/.
+This little app shows the conflict between TestUnit and the Logging gems. The app is based on Paul Boone work: http://www.mindbucket.com/2008/05/02/using-logging-and-testunit-together/.
 
 == Usage
   git clone git@github.com:martinos/logging_at_exit_conflict.git
