@@ -7,8 +7,9 @@ This little app shows the conflict between TestUnit and the Logging gems. The ap
   bundle
 If you start the test by running
   ruby test/at_exit_conflict_test.rb
-You will have no errors.
+You will have no errors. The reason for this is that we are requiring the logging gem before test/unit.
 But if you use Guard
   bundle exec guard
 You will get
   RuntimeError: appender '<Logging::Appenders::Stdout: stdout>' is closed
+This is caused by the fact that guard-test requires test/unit before requiring the logging gem.
